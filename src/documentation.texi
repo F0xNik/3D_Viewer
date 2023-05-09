@@ -1,0 +1,101 @@
+Manual for 3DViewer v1.0
+
+The program was developed as an educational project in Shcool21 from Cber.
+
+The program allows you to view models with the *.obj file extension. Per display
+models responds to OpenGL. The movement and movement of vertices is due to affine
+transformations. After transforming the vertices, their new coordinates are passed to rendering
+in OpenGL. Rendering with OpenGL is done on the CPU (shaders are not applied).
+The program allows you to take a screenshot and everything that will be visible in the display area
+models will be saved to the selected directory.
+The program allows you to make a gif-animation and everything that is visible in the display area.
+Model will be saved to the selected directory.
+
+
+
+Program features:
+
+The program opens files with *.obj extension.
+Displays the model in the viewer window.
+Scales the model.
+
+Moves the model along the axes of the coordinate system.
+
+Rotates the model about the axes of the coordinate system.
+
+Allows you to customize the image: projection view; thickness, type and color of lines;
+size, type and color of vertices; background color.
+
+Saves the image displayed in the model display area in *.jpg format and *.bmp.
+
+Saves a static or dynamic *.gif image with a duration of
+animation 5 seconds, with a frame rate in gif-animation 0.1 seconds.
+
+Stores user-selected display settings for the model.
+
+
+
+Open file button
+
+When the button is pressed, a menu is called to select a file with the *.obj extension.
+When you select a file and click on the open button, the parser is launched, which can
+handle some errors. If any error is detected, the field remains unchanged.
+
+
+Text field
+
+The text field contains information about the open file. This field displays information:
+- file name with extension;
+- the number of vertices and edges;
+
+Save as button
+
+This function allows you to take a snapshot of the model display area and save it to
+the selected directory.
+
+Button Create .gif
+
+This feature allows you to create GIF animations by capturing snapshots of the model display area.
+every 0.1 seconds for 5 seconds. At the end of 5 seconds, all frames will be created and
+the program will save them as a single *.gif file to the previously selected directory.
+
+Projection selection drop-down menu
+
+This menu allows you to select the projection type between central and parallel projections.
+
+Scale
+
+Changes the display of the model by increasing the scale by the appropriate amount.
+
+Moving
+
+A move shifts the model along the corresponding axis.
+
+Rotation
+
+Rotation causes the model to rotate by the appropriate angle around the selected axis.
+You can rotate the model both with the help of the spinbox and with the mouse.
+
+Setting the linetype and vertex
+
+Lines. The line type defines the type of line display in the model display area. line type
+may be: absent, solid and dotted.
+
+Setting the line and vertex size
+
+The line size specifies the width of the line in pixels.
+
+Color setting
+
+By clicking on one of the buttons, you can adjust the color of the corresponding element of the program.
+
+
+
+
+Developers:
+
+Artem Komissarov - Kledtall - team leader
+
+Klim Anikeev - julieanb
+
+Dmitry Komarov - chanrosa
